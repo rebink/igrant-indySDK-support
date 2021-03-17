@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rebin@igrant.io' => 'rebin@igrant.io' }
-  s.source           = {  :http =>  "https://repo.sovrin.org/ios/libindy/stable/libindy-core/1.15.0/libindy.tar.gz"
+  s.source           = {  :http =>  "https://repo.sovrin.org/ios/libindy/stable/libindy-core/1.16.0/libindy.tar.gz"
 }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.library = ['c++','z','stdc++']
