@@ -25,36 +25,34 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rebin@igrant.io' => 'rebin@igrant.io' }
-  s.source           = {  :git =>  "https://github.com/hyperledger/indy-sdk.git"
+  s.source           = {  :http =>  "https://repo.sovrin.org/ios/libindy/stable/libindy-core/1.15.0/libindy.tar.gz"
 }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-#  s.library = ['c++','z','stdc++']
-#  s.requires_arc = false
-#  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' ,
-#      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-#  }
-#  s.swift_version = '5.0'
-#
-#    s.xcconfig = {
-#         'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
-#         'CLANG_CXX_LIBRARY' => 'libc++',
-#         'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-#         'USER_HEADER_SEARCH_PATHS' => '"${PROJECT_DIR}/.."/**',
-#         'OTHER_LDFLAGS' => '-ObjC'
-#    }
-#  s.ios.deployment_target = '13.0'
-#
-#  s.source_files = '*.{h,a}'
-#  s.vendored_libraries = "*.a"
-#  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-#  # s.resource_bundles = {
-#  #   'igrant-indySDK-support' => ['igrant-indySDK-support/Assets/*.png']
-#  # }
-#
-#   s.public_header_files = '\"$(PODS_ROOT)/libindy/*.h"'
+  s.library = ['c++','z','stdc++']
+  s.requires_arc = false
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' ,
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  s.swift_version = '5.0'
+
+    s.xcconfig = {
+         'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+         'CLANG_CXX_LIBRARY' => 'libc++',
+         'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+         'USER_HEADER_SEARCH_PATHS' => '"${PROJECT_DIR}/.."/**',
+         'OTHER_LDFLAGS' => '-ObjC'
+    }
+  s.ios.deployment_target = '13.0'
+
+  s.source_files = '*.{h,a}'
+  s.vendored_libraries = "*.a"
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # s.resource_bundles = {
+  #   'igrant-indySDK-support' => ['igrant-indySDK-support/Assets/*.png']
+  # }
+
+   s.public_header_files = '\"$(PODS_ROOT)/libindy/*.h"'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
-    s.dependency 'libindy'
-    s.dependency 'libzmq'
-
+  
 end
