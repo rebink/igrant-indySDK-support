@@ -1,7 +1,0 @@
-use_frameworks!
-target 'igrant-indySDK-support_Tests' do
-  pod 'igrant-indySDK-support'
-#  , :path => '../'
-  
-  
-end
