@@ -28,7 +28,15 @@ TODO: Add long description of the pod here.
   s.source           = {  :http =>  "https://repo.sovrin.org/ios/libindy/stable/libindy-core/1.15.0/libindy.tar.gz"
 }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.library = ['c++','z','stdc++']
+  s.requires_arc = false
+    s.xcconfig = {
+         'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+         'CLANG_CXX_LIBRARY' => 'libc++',
+         'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+         'USER_HEADER_SEARCH_PATHS' => '"${PROJECT_DIR}/.."/**',
+         'OTHER_LDFLAGS' => '-ObjC'
+    }
   s.ios.deployment_target = '9.0'
 
   s.source_files = '*.h'
