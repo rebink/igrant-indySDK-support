@@ -35,6 +35,7 @@ TODO: Add long description of the pod here.
       'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
   s.swift_version = '5.0'
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
     s.xcconfig = {
          'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
