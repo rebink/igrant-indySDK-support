@@ -30,18 +30,19 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.library = ['c++','z','stdc++']
   s.requires_arc = false
-    s.xcconfig = {
-         'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
-         'CLANG_CXX_LIBRARY' => 'libc++',
-         'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-         'USER_HEADER_SEARCH_PATHS' => '"${PROJECT_DIR}/.."/**',
-         'OTHER_LDFLAGS' => '-ObjC'
-    }
+s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
+
+#    s.xcconfig = {
+#         'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+#         'CLANG_CXX_LIBRARY' => 'libc++',
+#         'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+#         'USER_HEADER_SEARCH_PATHS' => '"${PROJECT_DIR}/.."/**',
+#         'OTHER_LDFLAGS' => '-ObjC'
+#    }
   s.ios.deployment_target = '9.0'
 
   s.source_files = '*.h'
   s.vendored_libraries = "*.a"
-  s.requires_arc = false
   
   # s.resource_bundles = {
   #   'igrant-indySDK-support' => ['igrant-indySDK-support/Assets/*.png']
