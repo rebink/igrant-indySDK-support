@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rebin@igrant.io' => 'rebin@igrant.io' }
-  s.source           = {  :http => "https://store7.gofile.io/download/u5wtRo/e2f7fef261a7032c40af29dabb9c7b6e/libindy.zip" }
+  s.source           = {  :http => "https://srv-store4.gofile.io/download/eXxIcX/959af33a493b60d19700e9e6a060ad89/updated_libindy.tar.gz" }
 #      "https://repo.sovrin.org/ios/libindy/stable/libindy-core/1.16.0/libindy.tar.gz"
 #}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
@@ -45,9 +45,8 @@ TODO: Add long description of the pod here.
     }
   s.ios.deployment_target = '13.0'
 
-  s.source_files = '*.{h,a}'
-  s.vendored_libraries = "*.a"
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.source_files = '**/*.{h}'
+  s.vendored_libraries = "**/*.a"
   # s.resource_bundles = {
   #   'igrant-indySDK-support' => ['igrant-indySDK-support/Assets/*.png']
   # }
