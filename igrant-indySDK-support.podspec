@@ -51,7 +51,7 @@ TODO: Add long description of the pod here.
   #   'igrant-indySDK-support' => ['igrant-indySDK-support/Assets/*.png']
   # }
 
-   s.public_header_files = '*.{h}'
+   s.public_header_files = '\"$(PODS_ROOT)/libindy/*.h"'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
