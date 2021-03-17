@@ -25,12 +25,15 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rebinkpmna@gmail.com' => 'rebin@bluecast.ae' }
-  s.source           = { :git => 'https://github.com/rebinkpmna@gmail.com/igrant-indySDK-support.git', :tag => s.version.to_s }
+  s.source           = {  :http =>  "https://repo.sovrin.org/ios/libindy/stable/libindy-core/1.15.0/libindy.tar.gz"
+}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'igrant-indySDK-support/Classes/**/*'
+  s.source_files = '*.h'
+  s.vendored_libraries = "*.a"
+  s.requires_arc = false
   
   # s.resource_bundles = {
   #   'igrant-indySDK-support' => ['igrant-indySDK-support/Assets/*.png']
