@@ -30,7 +30,9 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.library = ['c++','z','stdc++']
   s.requires_arc = false
-  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' ,
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
   s.swift_version = '5.0'
 
     s.xcconfig = {
@@ -44,7 +46,7 @@ TODO: Add long description of the pod here.
 
   s.source_files = '*.{h,a}'
   s.vendored_libraries = "*.a"
-  
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # s.resource_bundles = {
   #   'igrant-indySDK-support' => ['igrant-indySDK-support/Assets/*.png']
   # }
